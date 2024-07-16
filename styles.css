@@ -26,6 +26,13 @@
     p {
         color: #424242;
     }
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    main > section {
+        margin-top: 130px;
+    }
 
     /* navigation bar styles */
     .navigation {
@@ -40,6 +47,7 @@
         margin-right: 30px;
     }
     .nav-items {
+        text-decoration: none;
         list-style: none;
         font-size: 1.1rem;
         font-weight: 600;
@@ -70,9 +78,79 @@
         max-width: 100%;
         height: auto;
     }
+    /* Features section style */
+    .feature-h {
+        font-size: 2.8rem;
+        border-left: 5px solid #FF900E;
+        padding-left: 21px;
+    }
+    .team-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .quick-list {
+        font-size: 2.8rem;
+    }    
+    .feature {
+        max-width: 530px;
+        margin-left: 77px;
+        margin-top: 256px;
+    }
+    /* Feature you will enjoy, image, button */
+    .version {
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+    }
+    .version-h {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #131313;
+        margin: 0;
+    }
+    .love-feature {
+        margin-right: 20px;
+    }
+     .architect-img {
+        max-width: 708px;
+        height: 982px;
+    }
+    #batch {
+        padding: 45px 42px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: -92px;
+        margin-top: -77px;
+    }
+    .year {
+        font-size: 4rem;
+    }
+
     /* Responsive Desgine */
     @media screen and (max-width: 576px) {
-        .navigation .nav-links{
+        .flex {
             flex-direction: column;
+        }
+        .nav-links{
+          margin-right: 40px;
+          text-align: center;
+        }
+        .feature {
+            margin-top: 30px;
+        }
+        .team-img {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        main > section {
+            margin-top: 0px;
+        }
+        .team {
+            flex-direction: column-reverse;
+        }
+        .architect-img {
+            max-width: 100%;
+            height: auto;
         }
     }
