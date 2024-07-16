@@ -113,9 +113,8 @@
     .love-feature {
         margin-right: 100px;
     }
-     .architect-img {
-        max-width: 708px;
-        height: 982px;
+    .architect-img {
+        max-width: 100%;
     }
     #batch {
         padding: 45px 42px;
@@ -143,14 +142,39 @@
         .team-img {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+        }
         main > section {
             margin-top: 0px;
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+
         }
         .team {
             flex-direction: column-reverse;
         }
-        .architect-img {
-            max-width: 100%;
-            height: auto;
+        .team-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        .feature ,.love-feature {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #batch {
+            display: inline;
+            margin-left: 0px;
         }
     }
