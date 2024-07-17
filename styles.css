@@ -126,6 +126,45 @@
     .year {
         font-size: 4rem;
     }
+    /* Some Facts Section style */
+    .fact-h {
+        font-size: 2.8rem;
+        font-weight:700;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .card {
+        width: 240px;
+        height: 240px;
+        border: 1px solid #FF900E;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        justify-content: center;
+        margin-left: 45px;
+        margin-top: 30px;
+    }
+        /* sponsor related styles */
+        .sponsor-info{
+            max-width: 540px;
+            margin: 50px auto;
+            text-align: center;
+        }
+    
+        .sponsor-companies{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin-left: 40px;
+        }
+    
+        .sponsor-companies img{
+            filter: grayscale(100%);
+        }
 
     /* Responsive Desgine */
     @media screen and (max-width: 576px) {
@@ -181,7 +220,17 @@
             display: inline;
             margin-left: 0px;
         }
+        .card-container {
+            grid-template-columns: repeat(1, 1fr) ;
+        }
+        .sponsor-companies{
+            justify-items: center;
+            gap: 50px;
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
+
+
     @media screen and (min-width: 576px) and (max-width: 992px) {
         .flex {
             flex-direction: column;
@@ -235,4 +284,14 @@
             display: inline;
             margin-left: 0px;
         }
+
+        .card-container {
+            grid-template-columns: repeat(2, 1fr) ;
+        }
+        .sponsor-companies {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            justify-items: center;
+        }
+
     }
