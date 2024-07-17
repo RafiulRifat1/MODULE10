@@ -146,11 +146,11 @@
         main > section {
             margin-top: 0px;
             display: flex;
+            flex-direction: column;
             width: 100%;
             margin: 0 auto;
             align-content: center;
             justify-items: center;
-
         }
         .team {
             flex-direction: column-reverse;
@@ -161,17 +161,75 @@
             margin-right: auto;
             width: 100%;
         }
-        .feature ,.love-feature {
+        .feature , .love-feature {
+            margin-top: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #batch {
+            display: inline;
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        .flex {
+            flex-direction: column;
+        }
+        .nav-links{
+          margin-right: 40px;
+          text-align: center;
+        }
+        .feature {
+            margin-top: 30px;
+        }
+        .team-img {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        main > section {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+        }
+        .team {
+            flex-direction: column-reverse;
+        }
+        .team-image {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
         }
+        .feature , .love-feature {
+            margin-top: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            align-content: center;
+            justify-items: center;
+        }
 
         .btn {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #batch {
             display: inline;
